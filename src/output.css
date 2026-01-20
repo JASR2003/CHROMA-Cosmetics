@@ -640,6 +640,11 @@
       color: var(--color-black);
     }
   }
+  .md\:aspect-\[21\/9\] {
+    @media (width >= 48rem) {
+      aspect-ratio: 21/9;
+    }
+  }
   .md\:w-1\/2 {
     @media (width >= 48rem) {
       width: calc(1/2 * 100%);
