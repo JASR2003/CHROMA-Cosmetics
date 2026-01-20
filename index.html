@@ -15,7 +15,7 @@
 
 <body>
     <section
-        class="relative w-full h-screen bg-center bg-cover bg-no-repeat bg-black/60 bg-blend-overlay flex flex-col justify-between bg-[url('./assets/hero-bg.jpg')] py-5">
+        class="relative w-full h-screen bg-center bg-cover bg-no-repeat bg-black/60 bg-blend-overlay flex flex-col justify-between bg-[url('./assets/hero-bg.jpg')] p-12 md:p-24">
 
         <!-- Navbar -->
         <div class="w-full p-6 flex justify-center items-center z-10">
@@ -29,7 +29,7 @@
             <h2 class="text-6xl md:text-8xl font-bodoni font-light mb-6">Sé tu mejor tú</h2>
             <h3 class="text-xl md:text-2xl font-eb-garamond italic font-light mb-8">Destaca lo que te hace única</h3>
             <button
-                class="bg-transparent border-2 border-white text-white py-3 px-8 text-lg md:text-xl font-montserrat font-light hover:bg-white hover:text-black hover:scale-105 transition duration-300 flex items-center gap-2 uppercase">
+                class="bg-transparent border-2 border-white text-white py-3 px-8 text-lg md:text-xl font-montserrat font-light hover:bg-white hover:text-black hover:scale-105 active:scale-95 active:bg-white active:text-black transition duration-300 flex items-center gap-2 uppercase">
                 Descubre la colección
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                     stroke="currentColor" class="w-5 h-5">
@@ -41,7 +41,7 @@
     </section>
 
     <section
-        class="relative w-full min-h-[calc(80vh)] bg-[#e2d5d5] py-20 px-[10%] flex flex-col justify-center items-center gap-8 text-center">
+        class="relative w-full min-h-[calc(80vh)] bg-[#e2d5d5] p-12 md:p-24 flex flex-col justify-center items-center gap-8 text-center">
         <p class="text-[#a24e4e] text-4xl md:text-6xl font-eb-garamond font-normal text-center leading-relaxed">
             ¿Mides tu belleza con filtros? Es momento de romper estereotipos
         </p>
@@ -89,10 +89,10 @@
 
     <section class="w-full bg-white flex flex-col md:flex-row min-h-screen">
         <!-- Columna Izquierda: Imagen y Texto -->
-        <div class="w-full md:w-1/2 relative bg-cover bg-center bg-[url('./assets/collection-bg.webp')]">
+        <div class="w-full md:w-1/2 relative bg-cover bg-center px-12 md:px-24 bg-[url('./assets/collection-bg.webp')]">
             <div class="absolute inset-0 bg-black/20"></div>
             <div
-                class="relative z-10 h-full flex flex-col justify-center items-center text-center p-12 md:p-24 bg-black/10">
+                class="relative z-10 h-full flex flex-col justify-center items-center text-center py-12 md:py-24 bg-black/10">
                 <h2 class="text-white text-4xl md:text-6xl font-bodoni mb-12 leading-tight">
                     Una colección<br>
                     creada para<br>
@@ -100,7 +100,7 @@
                     todos los días
                 </h2>
                 <button
-                    class="bg-transparent border-2 border-white text-white py-3 px-8 text-lg font-montserrat font-light hover:bg-white hover:text-black hover:scale-105 transition duration-300 flex items-center gap-2 uppercase">
+                    class="bg-transparent border-2 border-white text-white py-3 px-8 text-lg font-montserrat font-light hover:bg-white hover:text-black hover:scale-105 active:scale-95 active:bg-white active:text-black transition duration-300 flex items-center gap-2 uppercase">
                     Ver todos los tonos
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="w-5 h-5">
