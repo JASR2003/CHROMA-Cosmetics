@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CROMA Cosmetics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<link href="src/output.css" rel="stylesheet">
+
+<body>
+    <section
+        class="relative w-full h-screen bg-center bg-cover bg-no-repeat bg-black/60 bg-blend-overlay flex flex-col justify-between bg-[url('./assets/hero-bg.jpg')] py-5">
+
+        <!-- Navbar -->
+        <div class="w-full p-6 flex justify-center items-center z-10">
+            <h1 class="text-white text-2xl md:text-3xl font-eb-garamond font-normal text-center tracking-tight">CROMA
+                <br /> Cosmetics
+            </h1>
+        </div>
+
+        <!-- Contenido Hero -->
+        <div class="flex-1 flex flex-col items-center justify-center text-center text-white z-10 px-4">
+            <h2 class="text-6xl md:text-8xl font-bodoni font-light mb-6">Sé tu mejor tú</h2>
+            <h3 class="text-xl md:text-2xl font-eb-garamond italic font-light mb-8">Destaca lo que te hace única</h3>
+            <button
+                class="bg-transparent border-2 border-white text-white py-3 px-8 text-lg md:text-xl font-montserrat font-light hover:bg-white hover:text-black hover:scale-105 transition duration-300 flex items-center gap-2 uppercase">
+                Descubre la colección
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2 12h20m-4-4l4 4-4 4" />
+                </svg>
+            </button>
+        </div>
+
+    </section>
+
+    <section
+        class="relative w-full min-h-[calc(80vh)] bg-[#e2d5d5] py-20 px-[10%] flex flex-col justify-center items-center gap-8 text-center">
+        <p class="text-[#a24e4e] text-4xl md:text-6xl font-eb-garamond font-normal text-center leading-relaxed">
+            ¿Mides tu belleza con filtros? Es momento de romper estereotipos
+        </p>
+        <p class="text-[#a24e4e] text-4xl md:text-6xl font-eb-garamond font-normal text-center leading-relaxed">
+            Porque tu mejor versión no sigue tendencias, las crea
+        </p>
+    </section>
+
+    <section class="w-full bg-[#fff7f7] py-20 px-8">
+        <h3 class="text-[#a24e4e] text-4xl md:text-6xl font-eb-garamond font-normal text-center mb-16 leading-relaxed">
+            10 tonos inspirados en 10 mujeres reales
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-[95%] mx-auto">
+
+            <!-- Tono 1 -->
+            <div class="relative w-full aspect-[2/3] bg-cover bg-center bg-[url('./assets/tono-1.webp')]">
+                <div class="absolute bottom-8 w-full flex flex-col items-center gap-2">
+                    <span class="text-white text-xs uppercase tracking-widest font-montserrat">Tono 01</span>
+                    <span class="text-white text-3xl font-bodoni">Sand</span>
+                    <span class="bg-black text-white text-sm px-4 py-1 font-montserrat">$35.00</span>
+                </div>
+            </div>
+
+            <!-- Tono 2 -->
+            <div class="relative w-full aspect-[2/3] bg-cover bg-center bg-[url('./assets/tono-2.webp')]">
+                <div class="absolute bottom-8 w-full flex flex-col items-center gap-2">
+                    <span class="text-white text-xs uppercase tracking-widest font-montserrat">Tono 02</span>
+                    <span class="text-white text-3xl font-bodoni">Honey</span>
+                    <span class="bg-black text-white text-sm px-4 py-1 font-montserrat">$35.00</span>
+                </div>
+            </div>
+
+            <!-- Tono 3 -->
+            <div class="relative w-full aspect-[2/3] bg-cover bg-center bg-[url('./assets/tono-3.webp')]">
+                <div class="absolute bottom-8 w-full flex flex-col items-center gap-2">
+                    <span class="text-white text-xs uppercase tracking-widest font-montserrat">Tono 03</span>
+                    <span class="text-white text-3xl font-bodoni">Mocha</span>
+                    <span class="bg-black text-white text-sm px-4 py-1 font-montserrat">$35.00</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="w-full bg-white flex flex-col md:flex-row min-h-screen">
+        <!-- Columna Izquierda: Imagen y Texto -->
+        <div class="w-full md:w-1/2 relative bg-cover bg-center bg-[url('./assets/collection-bg.webp')]">
+            <div class="absolute inset-0 bg-black/20"></div>
+            <div
+                class="relative z-10 h-full flex flex-col justify-center items-center text-center p-12 md:p-24 bg-black/10">
+                <h2 class="text-white text-4xl md:text-6xl font-bodoni mb-12 leading-tight">
+                    Una colección<br>
+                    creada para<br>
+                    acompañarte<br>
+                    todos los días
+                </h2>
+                <button
+                    class="bg-transparent border-2 border-white text-white py-3 px-8 text-lg font-montserrat font-light hover:bg-white hover:text-black hover:scale-105 transition duration-300 flex items-center gap-2 uppercase">
+                    Ver todos los tonos
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2 12h20m-4-4l4 4-4 4" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Columna Derecha: Beneficios -->
+        <div class="w-full md:w-1/2 flex flex-col justify-center items-center gap-16 p-12 md:p-24">
+
+            <!-- Beneficio 1 -->
+            <div class="flex flex-col items-center text-center gap-4 max-w-xs">
+                <div class="w-16 h-16 text-[#a24e4e]">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        preserveAspectRatio="xMidYMid meet" version="1.0" viewBox="13.0 0.0 38.0 64.0"
+                        zoomAndPan="magnify" style="fill: rgb(0, 0, 0);" original_string_length="1411"
+                        class="w-full h-full">
+                        <g id="__id1_smzisfod99">
+                            <path
+                                d="M46,32.2c0-0.1,0-0.1,0-0.2V14c0-7.7-6.3-14-14-14S18,6.3,18,14v18c0,0.1,0,0.1,0,0.2c-3.2,3.5-5,8.1-5,12.8 v18c0,0.6,0.4,1,1,1h36c0.6,0,1-0.4,1-1V45C51,40.2,49.2,35.7,46,32.2z M44,30.3c-1.9-1.6-4.1-2.7-6.4-3.5c2.7-1.2,4.9-3.2,6.4-5.7 V30.3z M33,62h-2V31c0-0.1,0-0.2,0-0.2l1-1.3l1,1.3c0,0.1,0,0.2,0,0.2V62z M27.1,32.2l-2.9-2.3c2-1,4.2-1.7,6.4-1.8L27.1,32.2z M33.4,28.1c2.2,0.2,4.4,0.8,6.4,1.8l-2.9,2.3L33.4,28.1z M32,26c-6.3,0-11.6-4.9-12-11.1c0.2,0.1,0.3,0.1,0.5,0.1 C24,15,32.1,15,35,8.2c1.2,3.5,3.8,6.8,8.6,6.8c0.1,0,0.2,0,0.3-0.1C43.5,21.2,38.3,26,32,26z M44,13.1c-0.1,0-0.2-0.1-0.3-0.1 c-7,0-7.7-8.7-7.7-10.3C40.5,4.3,43.6,8.3,44,13.1z M32,2c0.7,0,1.3,0.1,2,0.2c0,0.1,0,0.2,0,0.2l0,0C34,13,24.9,13,20.5,13 c-0.2,0-0.3,0.1-0.5,0.1C20.5,6.9,25.7,2,32,2z M26.4,26.8c-2.3,0.7-4.5,1.9-6.4,3.5v-9.1C21.5,23.7,23.7,25.7,26.4,26.8z M15,45 c0-5.6,2.8-10.8,7.4-14l4.3,3.4c0.4,0.3,1,0.3,1.4-0.1l1-1.2V62H15V45z M49,62H35V33.1l1,1.2c0.2,0.2,0.5,0.4,0.8,0.4 c0.2,0,0.4-0.1,0.6-0.2l4.2-3.4c4.6,3.2,7.4,8.4,7.4,14V62z M36,37v4c0,0.6,0.4,1,1,1h8c0.6,0,1-0.4,1-1v-4c0-0.6-0.4-1-1-1h-8 C36.4,36,36,36.4,36,37z M38,38h6v2h-6V38z"
+                                style="fill: rgb(162, 78, 78);" />
+                        </g>
+                    </svg>
+                </div>
+                <p class="font-montserrat font-medium text-[#a24e4e] text-2xl">larga duración para tu ritmo diario</p>
+            </div>
+
+            <!-- Beneficio 2 -->
+            <div class="flex flex-col items-center text-center gap-4 max-w-xs">
+                <div class="w-16 h-16 text-[#a24e4e]">
+                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 500 349.8" version="1.1"
+                        viewBox="0 0 500 349.8" x="0px" xml:space="preserve" y="0px" style="fill: rgb(0, 0, 0);"
+                        original_string_length="1481" class="w-full h-full">
+                        <g id="__id0_smzisfod99">
+                            <path
+                                d="m495.7 17.4l-0.5-4.2c-0.5-4.6-4.1-8.2-8.6-8.8-107.2-13.9-185.7 5.8-233.2 58.7-25 27.8-36.6 60.5-33.5 94.6 2.4 27.1 14.1 53.5 33.1 75.2l-30.8 30.8-52.6-64.6c16.2-16.2 26.2-36.9 28.1-58.2 2.2-24.2-6.1-47.4-23.7-67.1-33.8-37.6-85.9-51.2-159.4-41.6l-3 0.4c-4.5 0.6-8 4.1-8.6 8.6-9.7 74.4 4.2 128.9 41.1 162.2 17.6 15.8 38 24.1 59.5 24.1 2.5 0 5-0.1 7.5-0.3 15.1-1.3 29.8-6.7 42.9-15.4l53.9 66.2-54.9 54.7c-3.9 3.9-3.9 10.2 0 14.1 2 2 4.5 2.9 7.1 2.9s5.1-1 7.1-2.9l99.8-99.8c21.7 18.8 47.9 30.4 74.9 32.8 3.5 0.3 7.1 0.5 10.6 0.5 30.2 0 59.1-11.6 84-34 53.5-48.4 72.9-123.2 59.2-228.9zm-386.4 189.9c-18.5 1.6-36.4-4.8-51.8-18.7-30.6-27.6-42.5-73.7-35.6-137.2 64-7.5 108.8 4.2 137 35.6 13.9 15.5 20.3 33.4 18.7 52-1.4 16.1-8.8 31.7-20.9 44.4l-50-61.5c-3.5-4.3-9.8-4.9-14.1-1.4s-4.9 9.8-1.4 14.1l50.1 61.5c-9.9 6.3-20.8 10.2-32 11.2zm360.7-51.7c-9.2 30.8-24.5 55.6-46.9 75.7-23.6 21.2-51 31-79.4 28.5-22.4-2-44.2-11.5-62.5-27l122.6-122.6c3.9-3.9 3.9-10.2 0-14.1s-10.2-3.9-14.1 0l-122.7 122.6c-15.7-18.3-25.3-40.3-27.3-62.8-2.5-28.4 7.3-55.9 28.5-79.4 33.8-37.5 86-56.4 155.5-56.4 16.5 0 34.1 1.1 52.6 3.2 6.4 52.1 4.3 96.6-6.3 132.3z"
+                                style="fill: rgb(162, 78, 78);" />
+                        </g>
+                    </svg>
+                </div>
+                <p class="font-montserrat font-medium text-[#a24e4e] text-2xl">textura ligera que realza tu color
+                    natural
+                </p>
+            </div>
+
+            <!-- Beneficio 3 -->
+            <div class="flex flex-col items-center text-center gap-4 max-w-xs">
+                <div class="w-16 h-16 text-[#a24e4e]">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        preserveAspectRatio="xMidYMid meet" version="1.0" viewBox="-0.0 -0.1 80.3 78.0"
+                        zoomAndPan="magnify" fill="currentColor" class="w-full h-full">
+                        <g data-name="48" id="__id2_smzisfod99">
+                            <path
+                                d="M80.263,32.5a22.576,22.576,0,0,0-.338-3.3L76.042,4.713A5.559,5.559,0,0,0,73.8,1.074L73.5.851l-.006.008A5.6,5.6,0,0,0,69.641.067a5.534,5.534,0,0,0-3.357,1.9,5.782,5.782,0,0,0-.735-.3,5.451,5.451,0,0,0-2.607-.187l-.154.024a5.537,5.537,0,0,0-3.246,1.919l-.24.3a5.56,5.56,0,0,0-1,4.154l2.906,18.247L47.283,45.338l-.049.051a5.537,5.537,0,0,0-1.105,2.1,5.411,5.411,0,0,0-.151,2.25l2.946,18.6a1.446,1.446,0,0,0,.614.976l11,7.983.091.079a1.489,1.489,0,0,0,2.067-.328l7.077-9.766a1.473,1.473,0,0,0,.264-1.13L69.282,62,79.852,35.64A9.518,9.518,0,0,0,80.263,32.5ZM61.7,5.46l.082-.114a2.641,2.641,0,0,1,1.631-.953,2.816,2.816,0,0,1,1.238.082,1.678,1.678,0,0,1,.37.171A5.782,5.782,0,0,0,65,6.46l2.709,17.054a5.478,5.478,0,0,0-2.47-.174,5.84,5.84,0,0,0-1.413.432L61.22,7.411A2.641,2.641,0,0,1,61.7,5.46ZM77.083,34.619,66.391,61.283a1.411,1.411,0,0,0-.077.871l.705,3.9-5.851,8.06-9.411-6.831L48.9,49.327a2.565,2.565,0,0,1,.612-2.052L63.987,27.312a2.62,2.62,0,0,1,1.571-1.022l.139-.022a2.6,2.6,0,0,1,1.834.367l.13.094a2.622,2.622,0,0,1,1.047,1.724,2.585,2.585,0,0,1-.464,1.949l-10,13.774a1.48,1.48,0,0,0,2.4,1.739l10-13.774a5.546,5.546,0,0,0,.993-4.16A5.648,5.648,0,0,0,71.2,26.59L67.927,6a2.57,2.57,0,0,1,.47-1.957l.076-.1A2.6,2.6,0,0,1,70.1,2.986a2.7,2.7,0,0,1,1.852.393l.114.082a2.655,2.655,0,0,1,1.053,1.716L77.018,29.7a19.022,19.022,0,0,1,.3,2.846A6.534,6.534,0,0,1,77.083,34.619ZM33.03,45.389l-.049-.051L19.057,26.122,21.963,7.875a5.56,5.56,0,0,0-1-4.154l-.239-.3a5.54,5.54,0,0,0-3.246-1.919l-.154-.024a5.45,5.45,0,0,0-2.607.187,5.665,5.665,0,0,0-.735.3,5.536,5.536,0,0,0-3.357-1.9A5.6,5.6,0,0,0,6.774.859L6.768.851l-.307.223A5.559,5.559,0,0,0,4.222,4.713L.339,29.205A22.439,22.439,0,0,0,0,32.5,9.518,9.518,0,0,0,.412,35.64L10.981,62l-.753,4.155a1.473,1.473,0,0,0,.265,1.13l7.076,9.766a1.489,1.489,0,0,0,2.067.328l.091-.079,11-7.983a1.445,1.445,0,0,0,.613-.976l2.947-18.6a5.427,5.427,0,0,0-.151-2.25A5.565,5.565,0,0,0,33.03,45.389ZM15.264,6.46a5.752,5.752,0,0,0-.02-1.814,1.664,1.664,0,0,1,.371-.171,2.811,2.811,0,0,1,1.237-.082,2.644,2.644,0,0,1,1.632.953l.082.114a2.64,2.64,0,0,1,.477,1.951L16.437,23.772a5.827,5.827,0,0,0-1.413-.432,5.475,5.475,0,0,0-2.469.174Zm16.1,42.867L28.507,67.281,19.1,74.112l-5.85-8.06.7-3.9a1.411,1.411,0,0,0-.076-.871L3.18,34.619a6.509,6.509,0,0,1-.229-2.07A18.876,18.876,0,0,1,3.245,29.7l3.9-24.526A2.651,2.651,0,0,1,8.194,3.461l.113-.082a2.705,2.705,0,0,1,1.852-.393,2.6,2.6,0,0,1,1.632.954l.076.1A2.573,2.573,0,0,1,12.336,6L9.067,26.59a5.443,5.443,0,0,0,.557,5.551l10,13.774a1.48,1.48,0,0,0,2.395-1.739l-10-13.774a2.585,2.585,0,0,1-.463-1.949A2.618,2.618,0,0,1,12.6,26.729l.129-.094a2.607,2.607,0,0,1,1.834-.367l.14.022a2.618,2.618,0,0,1,1.57,1.022L30.754,47.275a2.575,2.575,0,0,1,.612,2.052ZM55.044,23.482a9.321,9.321,0,0,0-.319-7.839A9.606,9.606,0,0,0,39.95,12.66c-.191-.152-.366-.292-.548-.426a9.59,9.59,0,0,0-10.662-.446,9.467,9.467,0,0,0-4.462,9.589,13.5,13.5,0,0,0,2.568,5.744c3.413,4.854,7.97,8.548,11.972,11.517a1.886,1.886,0,0,0,1.131.417,1.987,1.987,0,0,0,1.3-.546c.841-.718,1.693-1.427,2.545-2.136,1.9-1.58,3.86-3.213,5.684-4.939A22.836,22.836,0,0,0,55.044,23.482ZM39.94,35.861h0c-4.326-3.284-8.783-6.924-11.717-12.043-1.927-3.358-1.452-6.727,1.271-9.012a6.638,6.638,0,0,1,8.9.347c1.3,1.263,1.756,1.277,3.052.089l.074-.068a6.45,6.45,0,0,1,7.15-1.4,6.67,6.67,0,0,1,4.224,6.211,9.166,9.166,0,0,1-1.736,4.806h0C48.119,29.378,43.976,32.821,39.94,35.861Z" />
+                        </g>
+                    </svg>
+                </div>
+                <p class="font-montserrat font-medium text-[#a24e4e] text-2xl">incluye un estuche de maquillaje de
+                    regalo
+                </p>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+    --font-cormorant: "Cormorant Garamond", serif;
+    --font-bodoni: "Libre Bodoni", serif;
+    --font-eb-garamond: "EB Garamond", serif;
+    --font-montserrat: "Montserrat", sans-serif;
+}
