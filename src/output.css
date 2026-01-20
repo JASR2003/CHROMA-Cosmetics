@@ -28,8 +28,12 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
+    --text-7xl: 4.5rem;
+    --text-7xl--line-height: 1;
     --text-8xl: 6rem;
     --text-8xl--line-height: 1;
     --font-weight-light: 300;
@@ -220,6 +224,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .mt-auto {
+    margin-top: auto;
+  }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
@@ -232,6 +239,9 @@
   .mb-16 {
     margin-bottom: calc(var(--spacing) * 16);
   }
+  .mb-auto {
+    margin-bottom: auto;
+  }
   .flex {
     display: flex;
   }
@@ -243,6 +253,9 @@
   }
   .aspect-\[2\/3\] {
     aspect-ratio: 2/3;
+  }
+  .aspect-square {
+    aspect-ratio: 1 / 1;
   }
   .h-5 {
     height: calc(var(--spacing) * 5);
@@ -321,6 +334,9 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
+  .border-\[\#a24e4e\] {
+    border-color: #a24e4e;
+  }
   .border-white {
     border-color: var(--color-white);
   }
@@ -357,11 +373,29 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-white\/30 {
+    background-color: color-mix(in srgb, #fff 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 30%, transparent);
+    }
+  }
+  .bg-\[url\(\'\'\)\] {
+    background-image: url('');
+  }
   .bg-\[url\(\'\.\/assets\/collection-bg\.webp\'\)\] {
     background-image: url('./assets/collection-bg.webp');
   }
   .bg-\[url\(\'\.\/assets\/hero-bg\.jpg\'\)\] {
     background-image: url('./assets/hero-bg.jpg');
+  }
+  .bg-\[url\(\'\.\/assets\/protagonista-1\.webp\'\)\] {
+    background-image: url('./assets/protagonista-1.webp');
+  }
+  .bg-\[url\(\'\.\/assets\/protagonista-2\.webp\'\)\] {
+    background-image: url('./assets/protagonista-2.webp');
+  }
+  .bg-\[url\(\'\.\/assets\/protagonista-3\.webp\'\)\] {
+    background-image: url('./assets/protagonista-3.webp');
   }
   .bg-\[url\(\'\.\/assets\/tono-1\.webp\'\)\] {
     background-image: url('./assets/tono-1.webp');
@@ -383,6 +417,9 @@
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);
+  }
+  .p-8 {
+    padding: calc(var(--spacing) * 8);
   }
   .p-12 {
     padding: calc(var(--spacing) * 12);
@@ -414,6 +451,9 @@
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
   }
+  .py-24 {
+    padding-block: calc(var(--spacing) * 24);
+  }
   .text-center {
     text-align: center;
   }
@@ -437,6 +477,10 @@
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
   .text-6xl {
     font-size: var(--text-6xl);
@@ -465,6 +509,10 @@
   .leading-tight {
     --tw-leading: var(--leading-tight);
     line-height: var(--leading-tight);
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
   }
   .font-light {
     --tw-font-weight: var(--font-weight-light);
@@ -605,6 +653,12 @@
     @media (width >= 48rem) {
       font-size: var(--text-6xl);
       line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+  .md\:text-7xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-7xl);
+      line-height: var(--tw-leading, var(--text-7xl--line-height));
     }
   }
   .md\:text-8xl {
