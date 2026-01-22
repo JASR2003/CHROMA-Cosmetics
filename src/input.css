@@ -6,3 +6,13 @@
     --font-eb-garamond: "EB Garamond", serif;
     --font-montserrat: "Montserrat", sans-serif;
 }
+
+/* Utilities */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
